@@ -19,7 +19,7 @@ namespace EF_Core
         public DbSet<User> Users => Set<User>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-1MGIDT7;Initial Catalog=Users;Integrated Security=True");
+            optionsBuilder.UseSqlServer("Your url");
         }
     }
 }
